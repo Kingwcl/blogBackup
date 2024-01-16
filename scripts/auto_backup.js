@@ -5,20 +5,15 @@ try {
     backup();
   });
 } catch (e) {
-  console.log("产生了一个错误啊<(￣3￣)> !，错误详情为：" + e.toString());
+  console.log("错误详情为：" + e.toString());
 }
-
-RED_COLOR = "E[1;31m";
-BLUE_COLOR = "E[1;32m";
-RES = "E[0m";
 
 function backup() {
   if (!which("git")) {
     echo("=================Sorry, this script requires git=================");
     exit(1);
   } else {
-    echo("-e", "${RED_COLOR}======Auto Backup Begin======");
-    exec('echo -e "${RED_COLOR}======Auto Backup Begin======"');
+    console.log("123%c456", "color:red;");
     echo(
       "==============================Auto Backup Begin=============================="
     );
