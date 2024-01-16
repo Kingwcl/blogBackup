@@ -17,7 +17,7 @@ function backup() {
     echo("=================Sorry, this script requires git=================");
     exit(1);
   } else {
-    echo("${RED_COLOR}======Auto Backup Begin======");
+    echo("-e", "${RED_COLOR}======Auto Backup Begin======");
     echo(
       "==============================Auto Backup Begin=============================="
     );
