@@ -18,7 +18,7 @@ function backup() {
     exit(1);
   } else {
     echo("-e", "${RED_COLOR}======Auto Backup Begin======");
-    echo("-e", "e[31m 红色 e[0m");
+    exec('echo -e "${RED_COLOR}======Auto Backup Begin======"');
     echo(
       "==============================Auto Backup Begin=============================="
     );
