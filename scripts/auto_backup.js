@@ -22,11 +22,11 @@ function backup() {
       exit(1);
     }
     if (exec('git commit -am "blog auto backup script\'s commit"').code !== 0) {
-      echo("=================Error: Git commit failed=================");
+      echo("===============Error: Git commit failed===============");
       exit(1);
     }
     if (exec("git push").code !== 0) {
-      echo("=================Error: Git push failed=================");
+      echo("===============Error: Git push failed================");
       exit(1);
     }
     echo(
