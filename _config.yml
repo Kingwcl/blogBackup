@@ -104,3 +104,10 @@ deploy:
   type: git
   repo: git@106.15.207.165:/home/git/hexo.git
   branch: master
+
+# 本地搜索
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
