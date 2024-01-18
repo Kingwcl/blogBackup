@@ -21,7 +21,7 @@ function backup() {
     cd("D:/blog项目相关/hexoblog"); //此处修改为Hexo根目录路径
     if (exec("git add --all").code !== 0) {
       console.log(
-        "\x1b[34m",
+        "\x1b[31m",
         "=================Error: Git add failed=================\n",
         "\x1b[0m"
       );
@@ -29,7 +29,7 @@ function backup() {
     }
     if (exec('git commit -am "blog auto backup script\'s commit"').code !== 0) {
       console.log(
-        "\x1b[34m",
+        "\x1b[31m",
         "===============Error: Git commit failed===============\n",
         "\x1b[0m"
       );
@@ -37,7 +37,7 @@ function backup() {
     }
     if (exec("git push").code !== 0) {
       console.log(
-        "\x1b[34m",
+        "\x1b[31m",
         "===============Error: Git push failed================\n",
         "\x1b[0m"
       );
@@ -48,6 +48,5 @@ function backup() {
       "=====================================================================\n=====================================================================\n========================AUTO BACKUP Complete=========================\n=====================================================================\n=====================================================================\n",
       "\x1b[0m"
     );
-    echo();
   }
 }
