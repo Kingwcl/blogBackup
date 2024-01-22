@@ -22,7 +22,7 @@ function backup() {
     if (exec("git add --all").code !== 0) {
       console.log(
         "\x1b[31m",
-        "=================Error: Git add failed=================\n",
+        "================Error: Git add failed================\n",
         "\x1b[0m"
       );
       exit(1);
@@ -30,7 +30,7 @@ function backup() {
     if (exec('git commit -am "blog auto backup script\'s commit"').code !== 0) {
       console.log(
         "\x1b[31m",
-        "===============Error: Git commit failed===============\n",
+        "==============Error: Git commit failed==============\n",
         "\x1b[0m"
       );
       exit(1);
@@ -38,7 +38,7 @@ function backup() {
     if (exec("git push").code !== 0) {
       console.log(
         "\x1b[31m",
-        "===============Error: Git push failed================\n",
+        "==============Error: Git push failed===============\n",
         "\x1b[0m"
       );
       exit(1);
